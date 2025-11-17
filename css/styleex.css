@@ -1,0 +1,260 @@
+/*
+  CONFIGURAÇÕES GERAIS E RESET
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* Fundo geral: Um cinza muito claro, quase branco. */
+    background-color: #f5f5f5; 
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 1. CABEÇALHO (HEADER)
+*/
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    /* Fundo Branco */
+    background-color: #ffffff; 
+    border-bottom: 1px solid #e0e0e0; /* Linha de separação muito clara */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.cabecalho figure img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Borda cinza médio */
+    border: 2px solid #a0a0a0; 
+    margin-bottom: 5px;
+}
+
+.cabecalho h1 {
+    font-size: 2.5em;
+    color: #222; /* Texto bem escuro */
+    margin: 5px 0 0;
+}
+
+.cabecalho h3 {
+    font-size: 1.1em;
+    /* Título secundário em cinza */
+    color: #666666; 
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.cabecalho nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho nav a {
+    color: #444;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.cabecalho nav a:hover {
+    color: #007bff;
+}
+
+
+/* 2. CONTEÚDO PRINCIPAL (MAIN)
+*/
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Seção de Destaque (Banner e Busca) */
+main > section:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    /* Fundo Branco */
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main > section:first-child figure {
+    margin-bottom: 20px;
+}
+
+main > section:first-child figure img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Barra de Busca */
+.search-bar {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 10px 15px;
+    /* Borda cinza claro */
+    border: 1px solid #cccccc; 
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    font-size: 1em;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    /* Borda cinza claro */
+    border: 1px solid #cccccc; 
+    /* Fundo do botão cinza bem claro */
+    background-color: #e6e6e6; 
+    color: #555;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #ddd;
+}
+
+/* Seção de Produtos (Grade) */
+main > section:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 20px;
+}
+
+article {
+    /* Fundo Branco para os cards */
+    background-color: #ffffff; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+article figure img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    font-size: 1.1em;
+    color: #333;
+    margin: 5px 0;
+}
+
+article p:nth-of-type(1) { /* Preço */
+    font-weight: bold;
+    /* Cor do preço: Um verde escuro sutil, como parece na imagem */
+    color: #008000; 
+    margin-bottom: 5px;
+}
+
+article p:nth-of-type(2) { /* Descrição */
+    font-size: 0.85em;
+    color: #777;
+    min-height: 40px; 
+}
+
+/* 3. RODAPÉ (FOOTER)
+*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 30px 20px;
+    /* Fundo do Rodapé: Preto suave */
+    background-color: #222222; 
+    /* Texto do rodapé: Branco/Cinza bem claro */
+    color: #e0e0e0; 
+    /* Borda de destaque no topo: Cinza médio */
+    border-top: 5px solid #444444; 
+    margin-top: 40px;
+    flex-wrap: wrap; 
+}
+
+footer > div, footer address {
+    flex-basis: 30%; 
+    padding: 10px;
+    min-width: 250px;
+    text-align: left;
+}
+
+footer > div:nth-child(1) {
+    text-align: center;
+}
+
+footer > div:nth-child(1) h3 {
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+footer > div:nth-child(2) h3 {
+    color: #ffffff;
+}
+footer > div:nth-child(2) p, footer > div:nth-child(2) li {
+    font-size: 0.9em;
+    margin-bottom: 3px;
+}
+
+footer address {
+    text-align: right;
+    font-style: normal;
+}
+
+footer address a {
+    /* Links do rodapé em cinza claro */
+    color: #aaaaaa; 
+    display: block;
+    margin-bottom: 5px;
+}
+
+footer a:hover {
+    color: #f0f0f0;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer > div, footer address {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

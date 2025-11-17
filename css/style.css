@@ -1,0 +1,301 @@
+/* Reset básico que vi em video */
+body {
+  font-family: sans-serif;
+  background-color: #008C93;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+  background-color: #D9D9D9;
+  padding: 30px 0;
+  width: 100%;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+.menu-lista {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  line-height: 35px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin-left: 25px;
+  text-decoration: none;
+  background-color: #D85F80;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 8px;
+  font-weight: 1000;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: -20px;
+}
+
+.logo {
+  width: 80px;
+}
+
+.texto-logo-h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #D85F80;
+  line-height: 1;
+}
+
+.texto-logo-p {
+  margin: 0;
+  font-size: 14px;
+  color: #008C93;
+  letter-spacing: 1px;
+  margin-top: 2px;
+}
+
+
+/* SECTION MAIN */
+.section-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  margin-top: -48px;
+}
+
+.lado-esquerdo {
+  flex: 1;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+.search-bar-input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: 1px solid #cccccc;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+  font-size: 15px;
+  outline: none;
+}
+
+.search-bar-button {
+  padding: 10px 15px;
+  border: 1px solid #cccccc;
+  color: #555;
+  border-radius: 0 20px 20px 0;
+  font-size: 15px;
+}
+
+.search-bar-button:hover {
+  background-color: #f7be22;
+}
+
+.lado-direito {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;   
+  padding: 0;
+}
+
+.gata-main {
+  width: 280px;
+  height: auto;
+  margin-right: -40px;  
+}
+
+/* RETÂNGULO */
+.retangulo {
+  background-color: #D85F80;
+  width: 100%;
+  padding: 20px 0; /* sem padding lateral */
+  margin-top: -50px;
+}
+
+/* LISTA DE CARDS */
+.section-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.section-card-article {
+  background-color: white;
+  width: 160px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.section-card-article:hover{
+    background-color: #f7be22;
+} 
+
+
+.section-card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.section-card-figcaption {
+  font-size: 13px;
+  margin-top: 5px;
+  color: #555;
+}
+
+/* Título amarelo */
+.card-title {
+  background-color: #ffd84d;
+  padding: 4px 6px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 15px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Preço */
+.card-price {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0 5px 0;
+}
+
+/* Descrição */
+.card-desc {
+  font-size: 13px;
+  color: #666;
+  min-height: 40px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #E7E7E7;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 40px;
+  font-family: sans-serif;
+}
+
+.footer-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-box-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: -20px;
+}
+
+.logo-footer {
+  width: 80px;
+}
+
+.footer-texto-logo-h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #D85F80;
+  line-height: 1;
+}
+
+.footer-texto-logo-p {
+  margin: 0;
+  font-size: 14px;
+  color: #008C93;
+  letter-spacing: 1px;
+  margin-top: 2px;
+}
+
+.footer-subtexto {
+    font-weight: 1000;
+}
+
+
+footer figure {
+  margin: 0;
+}
+
+/* Títulos */
+footer h3 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #f7be22;
+}
+
+
+footer p {
+  margin: 3px 0;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+}
+
+.verde-driel{
+    margin: 3px 0;
+  font-size: 14px;
+  text-decoration: none;
+  color: #008C93;
+}
+
+.rose-mary{
+    margin: 3px 0;
+  font-size: 14px;
+  text-decoration: none;
+  color: #D85F80;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #008C93;
+}
+
+.footer-ul {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+}
+
+.footer-contato {
+  color: #D85F80;
+  font-weight: bold;
+}
+.footer-contato-verde {
+  color: #008C93;
+  font-weight: bold;
+}
