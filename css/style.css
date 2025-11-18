@@ -299,3 +299,193 @@ footer a:hover {
   color: #008C93;
   font-weight: bold;
 }
+
+/* PAG DE DETALHES */
+
+.box-rosa {
+  background-color: #D85F80;
+  width: 50%%;
+  padding: 20px;
+  margin-top: -50px;
+}
+
+.box-modelos {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+
+.container-images {
+    display: flex;
+    margin-top: 60px;
+    gap: -50px;
+}
+
+.imagem-principal{
+    width: 380px;
+    height: auto;
+    max-height: 500px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    position: relative;
+}
+
+.modelo {
+    justify-content: space-between;
+    width: 170px;
+    height: auto;
+}
+
+.main-opcoes {
+    display: flex;   
+    gap: 10px;
+}
+
+.h3-opcoes {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.opcoes-tamanho {
+    display: flex;
+    gap: 5px;
+}
+
+
+.opcao-tamanho {
+    margin-top: -10px;
+    display: flex;
+    font-weight: 900;
+    color: #008C93;
+    padding: 5px 4px;
+    border: solid 2px #white;
+    border-radius:20px;
+    font-weight: bold;
+    background-color: white;
+    justify-content: center;
+    width: 30px;
+}
+
+
+
+.box-cores {
+    background-color: white;
+    padding: 0; 
+    width: auto;
+    display: flex;
+   justify-content: space-between;
+    align-items: center; 
+    gap: 10px;
+    border-radius: 8px; 
+}
+
+
+
+.opcoes-cores {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+
+.opcao-cor {
+    margin-top: -10px;
+    display: flex;
+    padding: 5px 4px;
+    border-radius:20px;
+    font-weight: bold;
+    background-color: white;
+    width: 35px;
+    height: 25px;
+}
+
+.cor-rosa{
+ background-color: #F3398A;
+}
+
+.cor-azul{
+ background-color: #4B96ED;
+}
+
+.cor-vermelha{
+ background-color: #FF2600 ;
+}
+
+/* pag de contato */
+
+/* Topo amarelo com texto centralizado */
+
+
+/* Formulário */
+.form {
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título com fundo amarelo dentro do formulário */
+.titulo-amarelo {
+    background-color: #ffeb3b; /* amarelo */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 2em;
+    color: #D85F80;
+}
+
+/* Parágrafo discreto abaixo do título */
+.paragrafo-discreto {
+    padding: 15px 20px;
+    margin: 0;
+    color: #16213e;
+    font-size: 0.95em;
+}
+
+/* Labels */
+.label {
+    font-weight: 500;
+    color: #16213e;
+    margin: 10px 20px 5px 20px;
+}
+
+/* Inputs e textarea */
+.input-textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #f189d2;
+    font-size: 16px;
+    margin: 0 20px 10px 20px;
+}
+
+/* Botão centralizado */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.button {
+    width: 150px;
+    padding: 10px;
+    background-color: #D85F80;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #f50b64;
+}

@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-  <header>
+  <header class="cabecalho">
+   <div class="logo-box">
+    <img src="../img/mdi_pets.png" alt="Logo patinha" class="logo">
+    <div class="texto-logo">
+      <h1 class="texto-logo-h1">PITUFOFOS</h1>
+      <p class="texto-logo-p">moda pet</p>
+    </div>
+  </div>
 
-    <figure>
-        <img src="../img/gatoDesconfiado.jpg" alt="fotus" width="100">
-        <figcaption>icone</figcaption>
-    </figure>
-    
-    <h1>Pitufofos<h1> 
-    <h3>moda pet</h3>
-    
-    <nav>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="detalhes.html">Detalhes</a></li>
-        <li><a href="contato.html">Contato</a></li>
+    <nav class="menu">
+      <ul class="menu-lista">
+        <li><a class="item" href="index.html">Inicio</a></li>
+        <li><a class="item" href="html/detalhes.html">Detalhes</a></li>
+        <li><a class="item" href="html/contato.html">Contato</a></li>
       </ul>
     </nav>
   
@@ -27,68 +26,69 @@
 
   <main>
    
-    <h1>FALE COM A GENTE!</h1>
+    <form class="form" action="#" method="post">
+       
+        <h1 class="titulo-amarelo">FALE COM A GENTE!</h1>
 
-    <section>
-
-        <p>ESTÁ EM DÚVIDA SOBRE NOSSOS PRODUTOS, TAMANHOS OU PRAZOS DE ENTREGA? QUER COMPARTILHAR UMA FOTO DO SEU PET ESTILOSO? ESTAMOS AQUI PARA AJUDAR! PREENCHE O FORMULÁRIO ABAIXO E RESPONDEREMOS RAPIDINHO!</p>
-
-        <form action="#" method="post">
-            
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="" required>
-
-            <label for="assunto">Assunto:</label>
-            <input type="text" id="assunto" name="assunto" placeholder="" required>
-
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" placeholder="" required></textarea>
-
-            <button type="submit">Enviar</button>
         
-        </form>
+        <p class="paragrafo-discreto">
+            ESTÁ EM DÚVIDA SOBRE NOSSOS PRODUTOS, TAMANHOS OU PRAZOS DE ENTREGA? QUER COMPARTILHAR UMA FOTO DO SEU PET ESTILOSO? ESTAMOS AQUI PARA AJUDAR! PREENCHE O FORMULÁRIO ABAIXO E RESPONDEREMOS RAPIDINHO!
+        </p>
+            <label class="label" for="nome">Nome:</label>
+            <input class="input-textarea" type="text" id="nome" name="nome" placeholder="" required>
 
-    
+            <label class="label" for="email">E-mail:</label>
+            <input class="input-textarea" type="email" id="email" name="email" placeholder="" required>
+
+            
+
+            <label class="label" for="mensagem">Mensagem:</label>
+            <textarea class="input-textarea" id="mensagem" name="mensagem" placeholder="" required></textarea>
+
+            <div class="button-container">
+                <button class="button" type="submit">Enviar</button>
+            </div>
+        </form>
     </section>
 
   </main>
 
   <footer>
 
-        <div>
+        <div class="footer-div">
+            <div class="logo-box-footer">
             <figure>
-                <img src="../img/gatoDesconfiado.jpg" alt="fotus" width="100">
-                <figcaption>icone</figcaption>
+                <img class="logo-footer" src="../img/mdi_pets.png" alt="fotus" width="100">
             </figure>
-            <h3>Pitufofos</h3>
-            <h6>moda pet</h6>
-            <p>Moda que deixa seu bichinho fofo e estiloso!</p>
+            <div class="footer-texto-logo">
+      <h1 class="footer-texto-logo-h1">PITUFOFOS</h1>
+      <p class="footer-texto-logo-p">moda pet</p>
+      <p class="footer-subtexto">Moda que deixa seu</p>
+      <p class="footer-subtexto">bichinho fofo e estiloso!</p>
+        </div>
+        </div>
         </div>
 
-        <div>
+        <div class="footer-div">
                 
             <h3>Autores</h3>
                     
-                <ul>
-                    <li><a href="">jose.hadriel10@aluno.ifce.edu.br - 20241321000043</a></li>
-                    <li><a href="">sa.mariane08@aluno.ifce.edu.br - 20241321000031</a></li>
+                <ul class="footer-ul">
+                    <li><a class="verde-driel" href="">jose.hadriel10@aluno.ifce.edu.br - 20241321000043</a></li>
+                    <li><a class="rose-mary" href="">sa.mariane08@aluno.ifce.edu.br - 20241321000031</a></li>
                 </ul>
 
-                <p>José Hadriel Miranda dos Santos</p>
-                <p>Francisca Mariane Sousa da Silva</p>
+                <p class="verde-driel">José Hadriel Miranda dos Santos</p>
+                <p class="rose-mary" >Francisca Mariane Sousa da Silva</p>
                 
         </div>        
 
-        <div>
-            <p><a href="">contato@pitufofos.com.br</a></p>
-            <p><a href="">+55 85 4002-8922</a></p>
+        <div class="footer-div">
+            <p><a class="footer-contato" href="">contato@pitufofos.com.br</a></p>
+            <p><a <a class="footer-contato-verde"href="">+55 85 4002-8922</a></p>
         </div>
     
     </footer>
-
 </body>
 
 </html>
