@@ -14,9 +14,6 @@ body {
   padding: 30px 0;
   width: 100%;
   text-align: left;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .menu {
@@ -32,6 +29,7 @@ body {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  
 }
 
 .item {
@@ -48,7 +46,8 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: -20px;
+  margin-top: 0;          
+  padding-top: 0;
 }
 
 .logo {
@@ -56,8 +55,10 @@ body {
 }
 
 .texto-logo-h1 {
+  font-family: fantasy;
+  letter-spacing: 2px;
   margin: 0;
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 700;
   color: #D85F80;
   line-height: 1;
@@ -69,6 +70,7 @@ body {
   color: #008C93;
   letter-spacing: 1px;
   margin-top: 2px;
+  margin-left: 50px;
 }
 
 
@@ -218,7 +220,8 @@ footer {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: -20px;
+  margin-top: 0;           
+  padding-top: 0;
 }
 
 .logo-footer {
@@ -227,7 +230,9 @@ footer {
 
 .footer-texto-logo-h1 {
   margin: 0;
-  font-size: 18px;
+  font-family: fantasy;
+  letter-spacing: 1px;
+  font-size: 20px;
   font-weight: 700;
   color: #D85F80;
   line-height: 1;
@@ -237,8 +242,7 @@ footer {
   margin: 0;
   font-size: 14px;
   color: #008C93;
-  letter-spacing: 1px;
-  margin-top: 2px;
+  margin-left: 22px;
 }
 
 .footer-subtexto {
@@ -317,10 +321,9 @@ footer a:hover {
 .box-rosa {
   background-color: #D85F80;
   width: 60%;
-  padding: 15px;
   border-radius: 8px;
   padding: 20px;
-  margin: 30px;
+  margin: 15px auto; 
   font-size: 14px;
   position: relative;
 }
@@ -351,7 +354,7 @@ footer a:hover {
 .box-modelos {
    display: flex;
    flex-direction: column;
-    gap: 20px
+  gap: 20px;
 }
 
 
@@ -360,7 +363,7 @@ footer a:hover {
     height: auto;
     max-height: 500px;
     margin-bottom: 10px;
-    position: relative;
+
 }
 
 .modelo {
@@ -373,6 +376,7 @@ footer a:hover {
   color: white;
   font-weight: 800;
   font-size: 15px;
+  font-family: cursive;
 }
 
 .main-opcoes {
@@ -410,6 +414,7 @@ footer a:hover {
 
 
 .box-cores {
+  
   background-color: #D9D9D9;
   padding: 5px 8px;
   border-radius: 5px;
@@ -420,6 +425,7 @@ footer a:hover {
 
 
 .opcoes-cores {
+  
   display: flex;
   gap: 8px;
   margin: 0;
@@ -446,12 +452,11 @@ footer a:hover {
 
 
 .box-branca {
-   background-color: #f8f8f8;
+  background-color: #f8f8f8;
   width: 30%;
-  padding: 15px;
   border-radius: 8px;
   padding: 20px;
-  margin: 30px;
+  margin: 15px auto; 
   font-size: 14px;
   display: flex;
   flex-direction: column;
@@ -460,20 +465,24 @@ footer a:hover {
 
 .h3-det-title {
   color: #D85F80;
-  font-weight: 1000;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 35px;
+  font-family: fantasy;
+
 }
 
 .p-det-subtitle {
   color: #f7be22;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 18px;
+  font-family: cursive;
 }
 
 .ul-det {
   color: #D85F80;
   font-weight: 700;
   font-size: 18px;
+  font-family: cursive;
 }
 
 .box-cinza {
@@ -487,13 +496,13 @@ footer a:hover {
   width: 200px;
   padding: 10px;
   margin-top: 10px;
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 25px;
   border-radius: 6px;
   border: none;
   background-color: #f7be22;
   color: #890025;
-  font-weight: 1000;
+  font-weight: 700;
+  font-family: fantasy;
   
 }
 
@@ -506,6 +515,7 @@ footer a:hover {
   text-shadow:2px 2px 4px rgba(0,0,0,0.7);
   font-weight: 1000;
   font-size: 25px;
+  
 
 }
 
@@ -515,6 +525,7 @@ footer a:hover {
   text-shadow: 0 0 8px rgba(255, 215, 0, 0.8); 
   font-size: 40px;
   margin-top: 0px;
+  
 }
 
 
