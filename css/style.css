@@ -126,7 +126,7 @@ body {
   margin-right: -40px;  
 }
 
-/* RETÂNGULO */
+
 .retangulo {
   background-color: #D85F80;
   width: 100%;
@@ -145,7 +145,7 @@ body {
 /* CARD */
 .section-card-article {
   background-color: white;
-  width: 160px;
+  width: 200px;
   padding: 15px;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -169,7 +169,7 @@ body {
   color: #555;
 }
 
-/* Título amarelo */
+
 .card-title {
   background-color: #ffd84d;
   padding: 4px 6px;
@@ -183,14 +183,13 @@ body {
 }
 
 
-/* Preço */
 .card-price {
   font-weight: bold;
   font-size: 18px;
   margin: 10px 0 5px 0;
 }
 
-/* Descrição */
+
 .card-desc {
   font-size: 13px;
   color: #666;
@@ -302,137 +301,238 @@ footer a:hover {
 
 /* PAG DE DETALHES */
 
+.container-geral-det{
+  
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
 .box-rosa {
   background-color: #D85F80;
-  width: 50%%;
+  width: 60%;
+  padding: 15px;
+  border-radius: 8px;
   padding: 20px;
-  margin-top: -50px;
+  margin: 30px;
+  font-size: 14px;
+  position: relative;
+}
+
+.icone-save {
+  width: 40px;         
+  position: absolute;
+  top: 0;               
+  right: 0;            
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.box-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ 
+.container-images {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
 }
 
 .box-modelos {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-
+   display: flex;
+   flex-direction: column;
+    gap: 20px
 }
 
-.container-images {
-    display: flex;
-    margin-top: 60px;
-    gap: -50px;
-}
 
 .imagem-principal{
-    width: 380px;
+    width: 340px;
     height: auto;
     max-height: 500px;
-    margin-bottom: 20px;
-    background-color: #fff;
+    margin-bottom: 10px;
     position: relative;
 }
 
 .modelo {
-    justify-content: space-between;
+    
     width: 170px;
     height: auto;
 }
 
-.main-opcoes {
-    display: flex;   
-    gap: 10px;
+.p-lindas-det {
+  color: white;
+  font-weight: 800;
+  font-size: 15px;
 }
+
+.main-opcoes {
+   display: flex;
+  gap: 40px;
+  margin-top: 10px;
+}
+
 
 .h3-opcoes {
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 8px;
 }
+
 
 .opcoes-tamanho {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 5px;
+  padding: 0;
+  list-style: none;
 }
-
 
 .opcao-tamanho {
-    margin-top: -10px;
-    display: flex;
-    font-weight: 900;
-    color: #008C93;
-    padding: 5px 4px;
-    border: solid 2px #white;
-    border-radius:20px;
-    font-weight: bold;
-    background-color: white;
-    justify-content: center;
-    width: 30px;
+  background-color: white;
+  color: #008C93;
+  font-weight: bold;
+  padding: 6px 8px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
 }
-
 
 
 .box-cores {
-    background-color: white;
-    padding: 0; 
-    width: auto;
-    display: flex;
-   justify-content: space-between;
-    align-items: center; 
-    gap: 10px;
-    border-radius: 8px; 
+  background-color: #D9D9D9;
+  padding: 5px 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 
 .opcoes-cores {
-    display: flex;
-    gap: 5px;
-    justify-content: center;
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
 
 .opcao-cor {
-    margin-top: -10px;
-    display: flex;
-    padding: 5px 4px;
-    border-radius:20px;
-    font-weight: bold;
-    background-color: white;
-    width: 35px;
-    height: 25px;
+  width: 35px;
+  height: 25px;
+  border-radius: 12px;
 }
 
-.cor-rosa{
- background-color: #F3398A;
+/* CORES */
+.cor-rosa {
+  background-color: #F3398A;
+}
+.cor-azul {
+  background-color: #4B96ED;
+}
+.cor-vermelha {
+  background-color: #FF2600;
 }
 
-.cor-azul{
- background-color: #4B96ED;
+
+.box-branca {
+   background-color: #f8f8f8;
+  width: 30%;
+  padding: 15px;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.cor-vermelha{
- background-color: #FF2600 ;
+.h3-det-title {
+  color: #D85F80;
+  font-weight: 1000;
+  font-size: 20px;
 }
+
+.p-det-subtitle {
+  color: #f7be22;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.ul-det {
+  color: #D85F80;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.box-cinza {
+  background-color: #D9D9D9;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button-buy {
+  width: 200px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  background-color: #f7be22;
+  color: #890025;
+  font-weight: 1000;
+  
+}
+
+.button-buy:hover{
+  background-color: #F3398A;
+}
+
+.p-apenas-det {
+  color: white;
+  text-shadow:2px 2px 4px rgba(0,0,0,0.7);
+  font-weight: 1000;
+  font-size: 25px;
+
+}
+
+.preco-det {
+  color: #FF2600;
+  font-weight: 1000;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.8); 
+  font-size: 40px;
+  margin-top: 0px;
+}
+
 
 /* pag de contato */
 
-/* Topo amarelo com texto centralizado */
-
-
-/* Formulário */
 .form {
     background-color: white;
     width: 80%;
     max-width: 600px;
     margin: 50px auto;
     border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
 }
 
-/* Título com fundo amarelo dentro do formulário */
+
 .titulo-amarelo {
-    background-color: #ffeb3b; /* amarelo */
+    background-color: #f7be22;
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -442,22 +542,22 @@ footer a:hover {
     color: #D85F80;
 }
 
-/* Parágrafo discreto abaixo do título */
+
 .paragrafo-discreto {
     padding: 15px 20px;
     margin: 0;
     color: #16213e;
-    font-size: 0.95em;
+    font-size: 15px;
 }
 
-/* Labels */
+
 .label {
     font-weight: 500;
     color: #16213e;
     margin: 10px 20px 5px 20px;
 }
 
-/* Inputs e textarea */
+
 .input-textarea {
     padding: 10px;
     border-radius: 8px;
@@ -466,7 +566,6 @@ footer a:hover {
     margin: 0 20px 10px 20px;
 }
 
-/* Botão centralizado */
 .button-container {
     display: flex;
     justify-content: center;
